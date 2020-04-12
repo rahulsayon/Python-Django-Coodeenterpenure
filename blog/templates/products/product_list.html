@@ -1,0 +1,12 @@
+{%  extends 'base.html' %}
+{% block body %}
+<h1> Details </h1>
+
+{% for instance in obj %}
+   <!-- <p> {{ instance.id }} - <a href="/productdetails/{{ instance.id }}"> {{ instance.title }} </a>  </p> -->
+   <p> {{ instance.id }} - <a   href="{{ instance.absolute_url }}"> {{ instance.title }} </a>  </p>
+
+{% endfor %}
+
+
+{% endblock %}
